@@ -1,0 +1,162 @@
+/* styles.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+}
+
+.nav__brand h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__link,
+.nav__button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav__button:hover {
+  background-color: #45a049;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.logo-nav {
+  display: block;
+  padding: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.link-cont {
+  padding: 20px;
+}
+
+.link-cont a {
+  display: block;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.link-cont a:hover {
+  background-color: #555;
+}
+
+.repo-list {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.user-card-cont {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.repo-lang-span {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.repo-owner {
+  font-size: 14px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.message {
+  display: flex;
+  align-items: center; /* Centers the items vertically */
+  margin-bottom: 10px; /* Adds space between each message */
+}
+
+.person-icon {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  margin-right: 10px; /* Adds space between the image and the text */
+}
+
+.message_content {
+  flex-grow: 1; /* Allows the message content to fill the rest of the space */
+}
+
+
+.channels__text li {
+  font-weight: bold; /* Makes the text bold */
+  font-size: 18px; /* Sets the text size */
+  cursor: pointer; /* Changes the cursor on hover to indicate it's clickable */
+  padding: 5px 10px; /* Adds some padding around the text */
+  margin-bottom: 5px; /* Adds space between each item */
+}
+
+.channels__text li.active {
+  color: #4CAF50; /* Changes the color of the active channel */
+}
